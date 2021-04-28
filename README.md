@@ -22,3 +22,9 @@ Add the debian package to the ppa folder.
 ```
 ./updateppa.sh
 ```
+
+##importing keys 
+```
+gpg --import public.gpg
+gpg --import private.asc  
+```
