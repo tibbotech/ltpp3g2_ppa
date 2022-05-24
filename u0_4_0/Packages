@@ -1,0 +1,16 @@
+Package: tibbo-oobe
+Version: 0.4.0-1
+Architecture: all
+Maintainer: Tibbo Technology Inc. <support@tibbo.com>
+Installed-Size: 1658
+Depends: python3-pip
+Filename: ./tibbo-oobe_0.4.0-1_all.deb
+Size: 270116
+MD5sum: 55a175d96d9039614c7e40b8bf380dd5
+SHA1: bf97773817127bcdb0abe7f32d408b4f918bde2c
+SHA256: b38be0d48fd679403070e7c6a36b060ae1b3c84257190dbecb555c0efb078796
+Section: misc
+Priority: optional
+Homepage: https://github.com/tibbotech/ltpp3_g2_oobe
+Description: Tibbo out of box experience scripts and drivers.
+
