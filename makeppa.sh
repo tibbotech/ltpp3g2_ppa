@@ -3,6 +3,13 @@ GITHUB_USERNAME="tibbotech"
 
 expath="*tpp3g2_ppa"
 cpath=$(pwd)
+PPA_FOLDER=$1
+
+#check if 1st argument is empty
+if [ -z "$PPA_FOLDER" ]; then
+    echo "Usage: $0 <ppa_folder>"
+    exit 1
+fi
 
 if [[ $cpath == $expath ]]
 then 
@@ -14,17 +21,17 @@ fi
 
 
 
-if [ -d "ppa" ] 
+if [ -d ${PPA_FOLDER} ] 
 then
-    echo "PPA Directory has been already created."
-    echo "Add new .deb files to the ppa folder and run updateppa."
+    echo "${PPA_FOLDER} Directory has been already created."
+    echo "Add new .deb files to the ${PPA_FOLDER} folder and run updateppa."
     exit 1
 else
-    echo "PPA directory does not exist"    
+    echo "${PPA_FOLDER} directory does not exist"    
 fi
 
-mkdir ppa
-cd ppa
+mkdir ${PPA_FOLDER}
+cd ${PPA_FOLDER}
 
 echo "Exporting Public Key..."
 gpg --armor --export "${EMAIL}" > KEY.gpg
@@ -41,4 +48,4 @@ gpg --default-key "${EMAIL}" -abs -o - Release > Release.gpg
 gpg --default-key "${EMAIL}" --clearsign -o - Release > InRelease
 
 
-echo "deb https://${GITHUB_USERNAME}.github.io/ltpp3g2_ppa/ppa ./" > my_list_file.list
+echo "deb https://${GITHUB_USERNAME}.github.io/ltpp3g2_ppa/${PPA_FOLDER} ./" > my_list_file.list
