@@ -23,17 +23,18 @@ gpg --import public.gpg
 gpg --import private.asc  
 ```
 
-Next, you'll want to generate the PPA. Copy **makeppa.sh** out of this repo into your project's directory. Edit the file to replace the variables at the top with your own information. Then, run it:
+Next, you'll want to generate the PPA. Edit the file to "makeppa.sh" replace the variables at the top with your own information. Then, run it with the FOLDER_PATH as a parameter:
 ``` shell
-./makeppa.sh
+./makeppa.sh FOLDER_PATH
 ```
 
 You'll need to add your debian packages to the **ppa** folder, which is what is actually included in the archive.
-After adding or updating files, copy **updateppa.sh** to your project folder and update your PPA by running:
+After adding or updating files, run opy **updateppa.sh** with the FOLDER_PATH to your PPA and update your PPA by running:
 ``` shell
-./updateppa.sh
+./updateppa.sh FOLDER_PATH
 ```
 
+## Add the ppa to the device. 
 To add your PPA (or re-add the Tibbo PPA), you can run the following commands after replacing the URLs with those of your archive:
 ```shell
 curl -s --compressed "https://tibbotech.github.io/ltpp3g2_ppa/ppa/KEY.gpg" | sudo apt-key add -
