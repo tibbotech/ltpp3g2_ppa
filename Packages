@@ -197,10 +197,10 @@ Maintainer: Tibbo Technology Inc. <support@tibbo.com>
 Installed-Size: 8346
 Depends: python3-pip
 Filename: ./u0_6_0/tibbo-oobe_0.6.0-1_all.deb
-Size: 1746480
-MD5sum: 65a8d9a3d5346f1a0e4081e613f29bbb
-SHA1: ae2d37abad20ba341e44879dfe4240721e921a5d
-SHA256: c3c5b321281efbe230cf05f0a8dc22e57c5b2b30dea8b39b9b05edeb09cd6c21
+Size: 1746478
+MD5sum: f91621f48ada0830beaf781c97224f4e
+SHA1: 99de6a264536c08fb5aa408b9dda3db3d628e683
+SHA256: 266f6ea2ff5adcfb33556e09be75b16e145fe23b1c3ebf9335b000dfc17ab46e
 Section: misc
 Priority: optional
 Homepage: https://github.com/tibbotech/ltpp3_g2_oobe
