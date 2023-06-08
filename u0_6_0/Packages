@@ -52,10 +52,10 @@ Architecture: all
 Maintainer: Tibbo Technology Inc. <support@tibbo.com>
 Installed-Size: 3084
 Filename: ./tibbo-uboot_0.6.1-1_all.deb
-Size: 236216
-MD5sum: 519e9edb60e8e42a7622bed1a9c44092
-SHA1: e5570418d58ef7a3b1fec23cf72d7da2adb7b7a7
-SHA256: 326622f0926c39ae614a4edebe1e738014386df4abed72528c2ef083802da1c5
+Size: 236480
+MD5sum: 82a5ac035038d954dfb0cac6915c2866
+SHA1: 01c6701542365c50264735009ce9f9ce878c9b6e
+SHA256: 41165b3ca2366f76943a66d2ea52db51436c41f77342e2255a89f0354b8c58e0
 Section: unknown
 Priority: optional
 Homepage: <insert the upstream URL, if relevant>
