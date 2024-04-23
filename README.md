@@ -41,12 +41,12 @@ curl -s --compressed "https://tibbotech.github.io/ltpp3g2_ppa/ppa/KEY.gpg" | sud
 sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/tibbotech/ltpp3g2_ppa/main/u0_6_0/my_list_file.list
 sudo apt update -y
 ```
-However, please note that should the FOLDER_PATH change from u0_6_0 to for example u_0_7_0, then also change only the following line
+However, please note that should the FOLDER_NAME change from **u0_6_0** to for example **u_0_7_0**, then also change the following line
 from:
 ```shell
-sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/tibbotech/ltpp3g2_ppa/main/u0_6_0/my_list_file.list
+sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/.../main/u0_6_0/my_list_file.list
 ```
 to:
 ```shell
-sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/tibbotech/ltpp3g2_ppa/main/u0_7_0/my_list_file.list
+sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/.../main/u0_7_0/my_list_file.list
 ```
