@@ -38,15 +38,15 @@ After adding or updating files, run opy **updateppa.sh** with the FOLDER_NAME to
 To add your PPA (or re-add the Tibbo PPA), you can run the following commands after replacing the URLs with those of your archive:
 ```shell
 curl -s --compressed "https://tibbotech.github.io/ltpp3g2_ppa/ppa/KEY.gpg" | sudo apt-key add -
-sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/tibbotech/ltpp3g2_ppa/main/u0_6_0/my_list_file.list
+sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://tibbotech.github.io/ltpp3g2_ppa/u0_6_0/my_list_file.list"
 sudo apt update -y
 ```
 However, please note that should the FOLDER_NAME change from **u0_6_0** to for example **u0_7_0**, then also change the following line
 from:
 ```shell
-sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/.../main/u0_6_0/my_list_file.list
+sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://tibbotech.github.io/ltpp3g2_ppa/u0_6_0/my_list_file.list"
 ```
 to:
 ```shell
-sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/.../main/u0_7_0/my_list_file.list
+sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://tibbotech.github.io/ltpp3g2_ppa/u0_7_0/my_list_file.list"
 ```
