@@ -38,6 +38,6 @@ After adding or updating files, run opy **updateppa.sh** with the FOLDER_PATH to
 To add your PPA (or re-add the Tibbo PPA), you can run the following commands after replacing the URLs with those of your archive:
 ```shell
 curl -s --compressed "https://tibbotech.github.io/ltpp3g2_ppa/ppa/KEY.gpg" | sudo apt-key add -
-sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://tibbotech.github.io/ltpp3g2_ppa/ppa/my_list_file.list"
-sudo apt update
+sudo curl -sL -o /etc/apt/sources.list.d/my_list_file.list https://raw.githubusercontent.com/tibbotech/ltpp3g2_ppa/main/u0_6_0/my_list_file.list
+sudo apt update -y
 ```
