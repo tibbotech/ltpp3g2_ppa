@@ -50,13 +50,13 @@ Package: tibbo-oobe
 Version: 0.6.5-1
 Architecture: all
 Maintainer: Tibbo Technology Inc. <support@tibbo.com>
-Installed-Size: 8799
+Installed-Size: 8798
 Depends: python3-pip
 Filename: ./tibbo-oobe_0.6.5-1_all.deb
-Size: 1534584
-MD5sum: 6d7ed4e058077cb2adac72d60cf3896a
-SHA1: 982dd0e7c6406785a23a8d0b9c566a2bb00819df
-SHA256: 3758e9b6cf04017813f349f770dce12aa0c65bd2e329a5a92c3d5514ee3f2f15
+Size: 1534664
+MD5sum: e899bf89d47f236a04eb4fc71e4f6864
+SHA1: 49afa933202fcfe26d61c828c203d7a611ebfc6b
+SHA256: c2153e9cc39d914119b9a7843a100d8142c8e6b660ff1b159c90c4baa07d3012
 Section: misc
 Priority: optional
 Homepage: https://github.com/tibbotech/ltpp3_g2_oobe

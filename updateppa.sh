@@ -17,6 +17,8 @@ ERROR_INVALD_OR_NONEXISTING="***${FG_RED_COLOR}ERROR${RESET_COLOR}: invalid or n
 EMAIL="support@tibbo.com"
 
 
+#Get current directory
+curr_dir=$(pwd)
 
 #check if 1st argument is empty
 if [ -z "$PPA_FOLDER" ]; then
@@ -30,13 +32,11 @@ if [ -z "$PPA_FOLDER" ]; then
             read -p "${READDIALOG1}" PPA_FOLDER
 
             if [[ -n "${PPA_FOLDER}" ]]; then
-                curr_dir=$(pwd)
-
-                ppa_fpath="${curr_dir}/${PPA_FOLDER}"
-                if [[ -d "${ppa_fpath}" ]]; then
+                ppa_dir="${curr_dir}/${PPA_FOLDER}"
+                if [[ -d "${ppa_dir}" ]]; then
                     break
                 else
-                    errormsg="\n${ERROR_INVALD_OR_NONEXISTING} '${ppa_fpath}'\n" 
+                    errormsg="\n${ERROR_INVALD_OR_NONEXISTING} '${ppa_dir}'\n" 
 
                     echo -e "${errormsg}"
                 fi
@@ -48,11 +48,13 @@ if [ -z "$PPA_FOLDER" ]; then
     fi
     # echo "Usage: $0 <ppa_folder>"
     # exit 1
+else
+    ppa_dir="${curr_dir}/${PPA_FOLDER}"
 fi
 
-
-# Navigate to 'ppa_fpath'
-cd ${ppa_fpath}
+echo $ppa_dir
+# Navigate to 'ppa_dir'
+cd ${ppa_dir}
 
 # Packages & Packages.gz
 dpkg-scanpackages --multiversion . > Packages
